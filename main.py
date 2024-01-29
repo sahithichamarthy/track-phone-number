@@ -1,8 +1,8 @@
 import phonenumbers
 from phonenumbers import geocoder
-from test import number
 import folium
 key="dd915d327eb340549cfd11beed613d5d"
+number=input()
 check_number=phonenumbers.parse(number)
 number_location=geocoder.description_for_number(check_number,"en")
 print(number_location)
